@@ -1,22 +1,21 @@
-<!DOCTYPE html>
-<head>
-    <title>Node: Workshop 1</title>
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
+<%- include('head.ejs', {}) %>
 <body>
-    <header>
-        <h1>Node: Workshop 1</h1>
-    </header>
-    <div class='main'>
-        <h2>Part 2</h2>
-        <div class='content'>
-            <%- include('../partials/questions/7') %>
-            <div class='box answer'>
-                <h3>Answer</h3>
-                <!-- render answer here -->
-                <p>No answer required here...</p>
-
-            </div>
-        </div>
+  <header>
+    <%- include('head2.ejs', {}) %>
+  </header>
+  <div class="main">
+    <h2>Part 2</h2>
+    <div class="content">
+      <%- include('../partials/questions/7') %>
+      <div class="box answer">
+        <h3>Answer</h3>
+        <!-- render answer here -->
+        <p>No answer required here...</p>
+      </div>
     </div>
+    <nav>
+      <a href="/question6">Previous</a>
+      <a href="/question8">Next</a>
+    </nav>
+  </div>
 </body>
